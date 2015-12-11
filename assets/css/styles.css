@@ -47,6 +47,9 @@ section {
 strong {
     font-weight: 400;
 }
+.upper {
+	text-transform: uppercase;
+}
 .content {
 	padding-bottom: 60px;
 }
@@ -61,6 +64,9 @@ strong {
 .full-cta h3 {
 	font-weight: 200;
 }
+.intro {
+	padding-top: 0;
+}
 .intro h3 {
 	font-weight: 300;
 }
@@ -68,11 +74,30 @@ strong {
 	font-size: 22px;
 	font-weight: 300;
 }
-.concept .row,
-.concept .container .row {
+#skills .row,
+#skills .container .row,
+#solutions .row,
+#solutions .container .row {
 	margin-bottom: 0;
 }
-.concept .tabs-heading {
+.solutions-intro {
+	background-color: #fff;
+    background-image: url('../images/wp_logo.png');
+    background-repeat: no-repeat; 
+    background-position: right top;
+}
+.solutions-intro h4 {
+	font-weight: 200;
+}
+.solutions-intro h3 {
+	font-weight: 300;
+}
+.solutions-intro p {
+	font-weight: 300;
+	font-size: 22px;
+}
+#skills .tabs-heading,
+#solutions .tabs-heading {
 	padding-bottom: 30px;
 }
 .tabs .indicator {
@@ -84,40 +109,54 @@ strong {
 .tabs .tab a:hover {
     color: #64b5f6;
 }
-.concept .concept-tab {
-	background-image: url('../images/bg-62.jpg');
+#skills .tab-content,
+#solutions .tab-content {
 	padding: 30px 0;
 }
-.concept .concept-tab h3 {
-	color: #fff;
+.tab-content h3 {
 	font-size: 28px;
 	font-weight: 300;
-	margin-top: 0;
+	margin-top: 10px;
 	text-transform: uppercase;
 }
-.concept .concept-tab h4 {
-	color: #fff;
+.tab-content h4 {
 	font-size: 25px;
 	font-weight: 300;
 	margin-top: 0;
 }
-.concept .concept-tab p {
-	color: #eee;
+.tab-content p {
 	font-size: 17px;
 	font-weight: 300;
-}
-.concept .concept-tab .row,
-.concept .concept-tab .card {
 	margin-bottom: 0;
 }
+.tab-content .row,
+.tab-content .card {
+	margin-bottom: 0;
+}
+#alter p {
+	margin: 10px 0;
+}
+#alter img {
+	max-height: 350px;
+    float: left;
+    margin: 0 25px 15px 0;
+}
+.concept {
+	background-image: url('../images/bg-62.jpg');
+	color: #fff;
+}
+.solution {
+	background-color: #F1F1F1;
+}
 .card .card-content .card-title {
+    color: #333;
     line-height: 30px;
     padding-bottom: 15px;
     display: inline-block;
 }
 .card .card-content p {
 	color: #333;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 /*** PROGRESS BARS ***/
 .skill {
