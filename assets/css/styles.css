@@ -369,6 +369,18 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #42a5f5;
   box-shadow: 0 1px 0 0 #42a5f5;
 }
+
+#form-messages {
+	font-size: 2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.error {
+	color: #e53935;
+}
+.success {
+	color: #00e676;
+}
 /*** SOCIALS ICONS ***/
 .page-footer .socials {
     padding-left: 50px;
