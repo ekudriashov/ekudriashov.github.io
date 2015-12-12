@@ -40,27 +40,23 @@ jQuery(document).ready(function($) {
 		    data: formData,
 		    dataType: "json"
 		})
-		.done(function(response) {
+		.done(function() {
 		    // Make sure that the formMessages div has the 'success' class.
 		    $(formMessages).removeClass('hide');
 		    $(formMessages).addClass('success');
 		    // Set the message text.
-		    $(formMessages).text(response);
+		    $(formMessages).text('Thanks for message. I will respond.');
 		    // Clear the form.
 		    $('#name').val('');
 		    $('#email').val('');
 		    $('#message').val('');
 		})
-		.fail(function(data) {
+		.fail(function() {
 		    // Make sure that the formMessages div has the 'error' class.
 		    $(formMessages).removeClass('hide');
 		    $(formMessages).addClass('error');
 		    // Set the message text.
-		    if (data.responseText !== '') {
-		        $(formMessages).text(data.responseText);
-		    } else {
-		        $(formMessages).text('Oops... Something wrong! Try again later pls!');
-		    }
+		    $(formMessages).text('Oops... Something wrong! Try again later pls!');		    
 		});
     });
 });
