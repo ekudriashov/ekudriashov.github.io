@@ -85,11 +85,12 @@ strong {
     background-repeat: no-repeat; 
     background-position: right top;
 }
-.solutions-intro h4 {
-	font-weight: 200;
-}
 .solutions-intro h3 {
 	font-weight: 300;
+}
+.solutions-intro h4,
+.solutions-intro h2 {
+  font-weight: 200;
 }
 .solutions-intro p {
 	font-weight: 300;
